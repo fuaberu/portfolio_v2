@@ -23,8 +23,8 @@
 <MouseHighlight />
 <Header />
 
+<SocialMedia />
 <div class="mx-auto flex min-h-full max-w-screen-xl pt-[72px] md:px-4 relative">
-	<SocialMedia />
 	<div class="hidden shrink-0 grow-0 basis-16 md:block"></div>
 	<main class="min-h-full w-full p-3 md:mr-16">
 		<slot />
