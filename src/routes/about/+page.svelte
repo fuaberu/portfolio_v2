@@ -1,6 +1,6 @@
 <div class="h-full md:flex md:gap-6">
 	<h1 class="hidden flex-1 text-center text-3xl md:block">About Me</h1>
-	<div class="flex w-full flex-col gap-3 md:flex-[2] max-w-md md:max-w-full mx-auto">
+	<div class="mx-auto flex w-full max-w-md flex-col gap-3 md:max-w-full md:flex-[2]">
 		<h1 class="mb-6 text-3xl md:hidden">About Me</h1>
 		<p>
 			Hello! My name is Kevin, a passionate developer with a journey that began as a programming

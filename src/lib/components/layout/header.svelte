@@ -95,7 +95,7 @@
 		out:fade={{ duration: 100, easing: cubicIn }}
 	></div>
 	<div
-		class="fixed flex flex-col pb-10 right-0 top-0 z-50 h-full w-full max-w-md rounded-e-none rounded-s-md bg-gray-700 bg-opacity-60 bg-clip-padding p-4 drop-shadow-lg backdrop-blur-sm backdrop-filter"
+		class="fixed right-0 top-0 z-50 flex h-full w-full max-w-md flex-col rounded-e-none rounded-s-md bg-gray-700 bg-opacity-60 bg-clip-padding p-4 pb-10 drop-shadow-lg backdrop-blur-sm backdrop-filter"
 		role="dialog"
 		aria-modal="true"
 		in:fly={{ x: 200, duration: 200 }}
@@ -151,7 +151,7 @@
 				</li>
 			</ul>
 		</nav>
-		<ul class="flex items-center justify-evenly mt-auto">
+		<ul class="mt-auto flex items-center justify-evenly">
 			<li class="group">
 				<a href="https://github.com/fuaberu/" target="_blank" rel="noopener noreferrer"
 					><GithubIcon /></a

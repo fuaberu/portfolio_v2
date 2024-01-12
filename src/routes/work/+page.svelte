@@ -54,9 +54,9 @@
 					{/if}
 					<div class="my-3 text-gray-400">
 						{#each e.description as d}
-								<p class="mb-3">
-									{d}
-								</p>
+							<p class="mb-3">
+								{d}
+							</p>
 						{/each}
 					</div>
 					<div class="mb-4 flex flex-wrap gap-3">

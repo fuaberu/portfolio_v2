@@ -1,11 +1,14 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
+	import { browser } from "$app/environment";
 
-	let flashlight: HTMLDivElement;
+	let mousePos = {
+		x: 0,
+		y: 0
+	};
 
 	const isTouchDevice = () => {
 		try {
-			document.createEvent('TouchEvent');
+			document.createEvent("TouchEvent");
 			return true;
 		} catch (e) {
 			return false;
@@ -14,36 +17,30 @@
 
 	if (browser) {
 		if (!isTouchDevice()) {
-			document.body.addEventListener('mousemove', move);
+			document.addEventListener("mousemove", move);
 		}
 	}
 
 	function move(e: MouseEvent) {
-		let mouseX = e.clientX;
-		let mouseY = e.clientY;
-		flashlight.style.setProperty('--Xpos', mouseX + 'px');
-		flashlight.style.setProperty('--Ypos', mouseY + 'px');
+		mousePos = { x: e.clientX, y: e.clientY };
 	}
 </script>
 
-<div id="flashlight" bind:this={flashlight}></div>
+<div
+	id="flashlight"
+	style="background: radial-gradient(
+	circle 25em at {mousePos.x}px {mousePos.y}px,
+	rgba(215, 215, 215, 0.1),
+	rgba(0, 0, 0, 0)
+)"
+></div>
 
 <style>
 	#flashlight {
-		--Xpos: 50vw;
-		--Ypos: 50vh;
-	}
-	#flashlight:before {
-		content: '';
 		display: block;
 		width: 100%;
 		min-height: 100%;
 		position: fixed;
 		pointer-events: none;
-		background: radial-gradient(
-			circle 25em at var(--Xpos) var(--Ypos),
-			rgba(215, 215, 215, 0.1),
-			rgba(0, 0, 0, 0)
-		);
 	}
 </style>

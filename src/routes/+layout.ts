@@ -1,9 +1,9 @@
 // import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAnalytics, isSupported } from 'firebase/analytics';
-import type { LayoutLoad } from './$types';
-import { firebaseConfig } from '$lib/firebase/config';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAnalytics, isSupported } from "firebase/analytics";
+import type { LayoutLoad } from "./$types";
+import { firebaseConfig } from "$lib/firebase/config";
 
 export const load: LayoutLoad = async () => {
 	// Initialize Firebase
