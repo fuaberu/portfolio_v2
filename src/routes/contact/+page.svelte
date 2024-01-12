@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 	import { z } from "zod";
-	import toast from "svelte-french-toast";
+	import toast, { Toaster } from "svelte-french-toast";
 
 	export let data;
 
@@ -48,6 +48,8 @@
 		loading = false;
 	}
 </script>
+
+<Toaster />
 
 <div class="h-full md:flex md:gap-6">
 	<h1 class="hidden flex-1 text-center text-3xl md:block">Contact Me</h1>

@@ -3,7 +3,6 @@
 	import Header from "$lib/components/layout/header.svelte";
 	import SocialMedia from "$lib/components/layout/socialMedia.svelte";
 	import MouseHighlight from "$lib/components/mouseMask.svelte";
-	import { Toaster } from "svelte-french-toast";
 	import { onNavigate } from "$app/navigation";
 
 	onNavigate((navigation) => {
@@ -18,7 +17,6 @@
 	});
 </script>
 
-<Toaster />
 <MouseHighlight />
 <Header />
 

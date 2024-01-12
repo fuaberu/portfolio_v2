@@ -69,7 +69,7 @@
 			</li>
 		</ul>
 	</nav>
-	<button class="md:hidden" on:click={toggleOpen}>
+	<button class="md:hidden" on:click={toggleOpen} name="Menu" type="button">
 		{#if open}
 			<svg fill="none" viewBox="0 0 24 24" class="h-8 w-8 fill-black dark:fill-white">
 				<path
