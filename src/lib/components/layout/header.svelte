@@ -7,7 +7,7 @@
 	import GithubIcon from "$lib/assets/icons/github.svelte";
 	import LinkedinIcon from "$lib/assets/icons/linkedin.svelte";
 
-	let open: boolean = true;
+	let open: boolean = false;
 
 	export const toggleOpen = () => (open = !open);
 
