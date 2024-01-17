@@ -1,13 +1,20 @@
+<svelte:head>
+	<title>About | Kevin Alves Fabel</title>
+	<meta
+		name="description"
+		content="Learn more about Kevin Alves Fabel, and how he turned his career into software development"
+	/>
+</svelte:head>
+
 <div class="h-full md:flex md:gap-6">
 	<h1 class="hidden flex-1 text-center text-3xl md:block">About Me</h1>
 	<div class="mx-auto flex w-full max-w-md flex-col gap-3 md:max-w-full md:flex-[2]">
-		<h1 class="mb-6 text-3xl md:hidden">About Me</h1>
+		<h1 class="text-3xl sm:mb-6 md:hidden">About Me</h1>
 		<p>
-			Hello! My name is Kevin, a passionate developer with a journey that began as a programming
-			hobby and has seamlessly evolved into a thriving career. With over a year of hands-on
-			experience, I am committed to continuous learning and constantly seek innovative ways to
-			deliver enhanced value to customers. My user-first perspective ensures that my skills and
-			solutions align seamlessly with the ever-evolving landscape of technology.
+			Hello! My name is Kevin, Developer who started programming as a hobby and turned it into a
+			career, with almost 2 years of hands-on working experience and a post graduation in software
+			development. Committed to continuous learning, I consistently seek innovative ways to deliver
+			enhanced value to customers.
 		</p>
 		<p>
 			My interest in web development dates back to 2021 when I began playing with HTML and CSS, it

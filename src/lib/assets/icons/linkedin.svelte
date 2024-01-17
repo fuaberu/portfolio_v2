@@ -1,4 +1,7 @@
-<svg class="h-8 w-8" viewBox="0 0 128 128">
+<script>
+	export let size = 'h-8 w-8'
+</script>
+<svg class="{size}" viewBox="0 0 128 128">
 	<path
 		class="fill-current text-gray-500 group-hover:text-teal-300"
 		d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3z"

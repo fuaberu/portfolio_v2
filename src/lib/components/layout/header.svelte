@@ -23,7 +23,7 @@
 </script>
 
 <header
-	class="fixed left-0 right-0 top-0 z-30 flex justify-between bg-gray-900 bg-opacity-20 bg-clip-padding px-4 py-2 backdrop-blur-sm backdrop-filter md:py-4"
+	class="fixed left-0 right-0 top-0 z-40 flex justify-between bg-gray-900 bg-opacity-20 bg-clip-padding px-4 py-2 backdrop-blur-sm backdrop-filter md:py-4"
 >
 	<nav class="mx-auto max-w-screen-xl flex-1">
 		<ul class="flex items-center gap-4">
@@ -33,28 +33,28 @@
 			<li class="hidden md:block">
 				<a
 					href="/about"
-					class:active={$page.url.pathname === "/about"}
+					class:text-teal-300={$page.url.pathname === "/about"}
 					class="border-b border-b-transparent hover:text-teal-300">About</a
 				>
 			</li>
 			<li class="hidden md:block">
 				<a
 					href="/experience"
-					class:active={$page.url.pathname === "/experience"}
+					class:text-teal-300={$page.url.pathname === "/experience"}
 					class="border-b border-b-transparent hover:text-teal-300">Experience</a
 				>
 			</li>
 			<li class="hidden md:block">
 				<a
 					href="/work"
-					class:active={$page.url.pathname === "/work"}
+					class:text-teal-300={$page.url.pathname === "/work"}
 					class="border-b border-b-transparent hover:text-teal-300">Work</a
 				>
 			</li>
 			<li class="hidden md:block">
 				<a
 					href="/contact"
-					class:active={$page.url.pathname === "/contact"}
+					class:text-teal-300={$page.url.pathname === "/contact"}
 					class="border-b border-b-transparent hover:text-teal-300">Contact</a
 				>
 			</li>
@@ -116,28 +116,28 @@
 				<li class="w-full">
 					<a
 						href="/about"
-						class:active={$page.url.pathname === "/about"}
+						class:text-teal-300={$page.url.pathname === "/about"}
 						class="border-b border-b-transparent hover:text-teal-300">About</a
 					>
 				</li>
 				<li class="w-full">
 					<a
 						href="/experience"
-						class:active={$page.url.pathname === "/experience"}
+						class:text-teal-300={$page.url.pathname === "/experience"}
 						class="border-b border-b-transparent hover:text-teal-300">Experience</a
 					>
 				</li>
 				<li class="w-full">
 					<a
 						href="/work"
-						class:active={$page.url.pathname === "/work"}
+						class:text-teal-300={$page.url.pathname === "/work"}
 						class="border-b border-b-transparent hover:text-teal-300">Work</a
 					>
 				</li>
 				<li class="w-full">
 					<a
 						href="/contact"
-						class:active={$page.url.pathname === "/contact"}
+						class:text-teal-300={$page.url.pathname === "/contact"}
 						class="border-b border-b-transparent hover:text-teal-300">Contact</a
 					>
 				</li>
@@ -169,9 +169,3 @@
 		</ul>
 	</div>
 {/if}
-
-<style lang="postcss">
-	.active {
-		@apply border-teal-300;
-	}
-</style>

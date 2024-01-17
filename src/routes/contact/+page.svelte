@@ -2,6 +2,9 @@
 	import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 	import { z } from "zod";
 	import toast, { Toaster } from "svelte-french-toast";
+	import LinkedinIcon from "$lib/assets/icons/linkedin.svelte";
+	import EmailIcon from "$lib/assets/icons/email.svelte";
+	import Email from "$lib/assets/icons/email.svelte";
 
 	export let data;
 
@@ -51,10 +54,15 @@
 
 <Toaster />
 
+<svelte:head>
+	<title>Contact | Kevin Alves Fabel</title>
+	<meta name="description" content="Kevin Alves Fabel contact form" />
+</svelte:head>
+
 <div class="h-full md:flex md:gap-6">
 	<h1 class="hidden flex-1 text-center text-3xl md:block">Contact Me</h1>
 	<div class="mx-auto flex w-full max-w-md flex-col gap-3 md:max-w-full md:flex-[2]">
-		<h1 class="mb-6 text-3xl md:hidden">Contact Me</h1>
+		<h1 class="text-3xl sm:mb-6 md:hidden">Contact Me</h1>
 		<form
 			bind:this={form}
 			on:submit|preventDefault={handleSubmit}
@@ -101,37 +109,49 @@
 					<span class="text-red-400">{errors?.message} </span>
 				{/if}
 			</div>
-			<button
-				class="rounded bg-teal-600 px-4 py-2 font-bold text-white hover:bg-teal-500 focus:border-teal-300 focus:outline-none"
-				type="submit"
-			>
-				{#if loading}
-					<div class="flex items-center gap-2">
-						<svg
-							class="-ml-1 h-5 w-5 animate-spin text-white"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-						>
-							<circle
-								class="opacity-25"
-								cx="12"
-								cy="12"
-								r="10"
-								stroke="currentColor"
-								stroke-width="4"
-							></circle>
-							<path
-								class="opacity-75"
-								fill="currentColor"
-								d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-							></path>
-						</svg>
-						Loading...
-					</div>
-				{:else}Contact Me!
-				{/if}
-			</button>
+			<div class="flex items-center gap-3">
+				<button
+					class="rounded bg-teal-600 px-4 py-2 font-bold text-white hover:bg-teal-500 focus:border-teal-300 focus:outline-none"
+					type="submit"
+				>
+					{#if loading}
+						<div class="flex items-center gap-2">
+							<svg
+								class="-ml-1 h-5 w-5 animate-spin text-white"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+							>
+								<circle
+									class="opacity-25"
+									cx="12"
+									cy="12"
+									r="10"
+									stroke="currentColor"
+									stroke-width="4"
+								></circle>
+								<path
+									class="opacity-75"
+									fill="currentColor"
+									d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+								></path>
+							</svg>
+							Loading...
+						</div>
+					{:else}
+						Contact Me!
+					{/if}
+				</button>
+				<a
+					href="https://www.linkedin.com/in/kevin-fabel/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex justify-center group"
+				>
+					<LinkedinIcon size="h-10 w-10" />
+				</a>
+				<a href="mailto:kevinfabe@gmail.com" class="group"><EmailIcon size="h-10 w-10" /></a>
+			</div>
 		</form>
 	</div>
 </div>

@@ -39,10 +39,14 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Work | Kevin Alves Fabel</title>
+	<meta name="description" content="Kevin Alves Fabel side projects">
+</svelte:head>
 <div class="min-h-full md:flex md:gap-6">
 	<h1 class="hidden flex-1 text-center text-3xl md:block">My projects</h1>
 	<div class="mx-auto flex w-full max-w-md flex-col gap-3 md:max-w-full md:flex-[2]">
-		<h1 class="mb-6 text-3xl md:hidden">My projects</h1>
+		<h1 class="sm:mb-6 text-3xl md:hidden">My projects</h1>
 		{#each experiences as e}
 			<div
 				class="rounded-md bg-clip-padding p-2 backdrop-blur-sm backdrop-filter duration-300 hover:bg-gray-700 hover:bg-opacity-50 hover:drop-shadow-lg sm:p-6 md:flex md:gap-6"
