@@ -52,7 +52,7 @@
 				class="rounded-md bg-clip-padding p-2 backdrop-blur-sm backdrop-filter duration-300 hover:bg-gray-700 hover:bg-opacity-50 hover:drop-shadow-lg sm:p-6 md:flex md:gap-6"
 			>
 				<div>
-					<h3 class="text-3xl font-bold leading-snug dark:text-gray-300">{e.title}</h3>
+					<h2 class="text-3xl font-bold leading-snug dark:text-gray-300">{e.title}</h2>
 					{#if e.company}
 						<h4>{e.company}</h4>
 					{/if}
@@ -69,7 +69,8 @@
 								class="group rounded-md p-2 drop-shadow-md dark:bg-gray-700"
 								href={e.links.github}
 								target="_blank"
-								rel="noopener noreferrer"><GithubIcon /></a
+								rel="noopener noreferrer"
+								aria-label="Open {e.title} Github"><GithubIcon /></a
 							>
 						{/if}
 						{#if e.links.preview}
@@ -77,7 +78,7 @@
 								class="group rounded-md p-2 drop-shadow-md dark:bg-gray-700"
 								href={e.links.preview}
 								target="_blank"
-								rel="noopener noreferrer"><Eye /></a
+								rel="noopener noreferrer" aria-label="Open {e.title} Preview"><Eye /></a
 							>
 						{/if}
 					</div>

@@ -147,10 +147,11 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					class="flex justify-center group"
+					aria-label="Open Kevin Alves Fabel LinkedIn"
 				>
 					<LinkedinIcon size="h-10 w-10" />
 				</a>
-				<a href="mailto:kevinfabe@gmail.com" class="group"><EmailIcon size="h-10 w-10" /></a>
+				<a href="mailto:kevinfabe@gmail.com" class="group" aria-label="Send an email to Kevin Alves Fabel"><EmailIcon size="h-10 w-10" /></a>
 			</div>
 		</form>
 	</div>
