@@ -1,4 +1,4 @@
-# My protfolio
+# My portfolio
 
 ## Table of contents
 * [General info](#general-info)
