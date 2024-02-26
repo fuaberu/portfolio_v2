@@ -1,38 +1,28 @@
-# create-svelte
+# My portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Table of contents
+* [General info](#general-info)
+* [Demo](#demo)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-## Creating a project
+## General info
+This project is my personal portfolio, where I can display my projects. 
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Demo
+[https://kevin-fabel-port.netlify.app](https://kevin-fabel-port.netlify.app/)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Technologies
+Project is created with:
+* Typescript version: 5.0.0
+* svelte version: 4.2.7
+* Firebase version: 10.7.1
+* Tailwindcss version: 3.4.1
+	
+## Setup
+To run this project, install it locally using npm:
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+$ npm install
+$ npm dev
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
