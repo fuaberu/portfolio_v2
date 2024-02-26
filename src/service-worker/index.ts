@@ -10,7 +10,7 @@ const CACHE = `cache-${version}`;
 
 const ASSETS = [
 	...build, // the app itself
-	...files // everything in `static`
+	...files.filter((file) => !file.startsWith("resume")), // everything in `static` but the resume
 ];
 
 // Install service worker
